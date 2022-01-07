@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/common.css"> -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <script type="text/javascript" src="./js/jquery.js"></script>
+  <link rel="stylesheet" href="./stylesheets/style.css">
+
+  
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+    
+    .mybtn1{
+      color:#0d6efd;
+      background-color: #fff;
+      border:none;
+    }
+    .mybtn1:hover{
+      color:#0d6efd;
+      background-color: #fff;
+      border:none;
+    }
+    .mybtn1:active{
+      color:#0d6efd;
+      background-color: #fff;
+      border:none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="py-1 bg-light border-bottom">
+      <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+          <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">书库</a></li>
+          <li class="nav-item"><a href="#" class="nav-link link-dark px-2">电子书库</a></li>
+        </ul>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">购物车</a></li>
+          <li class="nav-item"><a href="./sign_in_index.html" class="nav-link">登录</a></li>
+          <li class="nav-item"><a href="./sign_up_index.html" class="nav-link">注册</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="py-3 ">
+      <div class="container">
+        <div class="row">
+          <a href="#" class="col-8">
+            <img src="images/head/logo.png" alt="">
+          </a>
+          <form class="col-4">
+            <div class="input-group">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+              <button type="submit" class="btn btn-outline-primary">
+                查找
+              </button>
+            </div>
+          </form>
+        </div>
+        
+        
+      </div>
+    </header>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 category-type">
+          <a href="#">全部分类</a>
+        </div>
+        <div class=" col-md-8 ">
+          <ul class="nav me-auto">
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2"></a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">首页</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">纸质书</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">图集电子书</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">标准电子书</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">积分换购</a></li>
+            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">国标电子书库</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <a href="#">下载电子书移动书库</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mainport">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 leftList">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="#">国标图集</a></li>
+              <li class="list-group-item"><a href="#">地方标图集</a></li>
+              <li class="list-group-item"><a href="#">国家标准</a></li>
+              <li class="list-group-item"><a href="#">工程建设标准规范</a></li>
+              <li class="list-group-item"><a href="#">注册考试辅导教材</a></li>
+              <li class="list-group-item"><a href="#">各大出版社图书</a></li>
+              <li class="list-group-item"><a href="#">图标图集系列</a></li>
+              <li class="list-group-item"><a href="#">科技</a></li>
+              <li class="list-group-item"><a href="#">计算机工程</a></li>
+            </ul>
+          </div>
+          <div class="col-md-7">
+
+          </div>
+
+          
+          <div class="col-md-3 rightList">
+            <div class="logging">
+              <div class="text">
+                Hi，欢迎使用国标电子书商城
+              </div>
+              <div class="row">
+                <div class="col-2"></div>
+                <button class="col-3 btn btn-primary" id="login_btn">登录</button>
+                <div class="col-2"></div>
+                <button class="col-3 btn btn-primary" id="regist_btn">注册</button>
+              </div>
+            </div>
+
+
+
+            <div class="announcement">
+              <div class="title row">
+                <a href="#" class="col-9" style="color: black; font-size: 14px; font-weight: bold;">系统公告</a>
+                <a href="#" class="col-3" style="color: #e1b15c;">更多</a>
+              </div>
+              <div class="main_announce">
+                <ul class="list-group">
+                  <li class="list-group-item l1"><a href="#"> · 元旦纸书发货延迟公告</a></li>
+                  <li class="list-group-item l2"><a href="#"> · 受新冠疫情影响，纸质书无法发货</a></li>
+                  <li class="list-group-item l3"><a href="#"> · 国庆期间标准电子书暂停销售通知</a></li>
+                  <li class="list-group-item l4"><a href="#"> · 国标电子书库商城上线啦！</a></li>
+                  <li class="list-group-item l5"><a href="#"> · 注册即有惊喜！</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm card1">
+              <img src="images/main/book1.jpg" class="bd-placeholder-img" width="100%" height="425" alt="">
+              <div class="card-body">
+                <p class="card-text"><button id="bt_detail1" class="btn btn-secondary btn-sm mybtn1">吊车轨道联结及车档</button></p>
+                <p class="intro">本图集是在04G325图集的基础上，为便于设计、施工人员的使用，按现行国家标准规范和技术进行了……</p>
+                <div class="info">
+                  <span class="s1">￥82.50</span> <span class="s2"> • 345人购买</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm card2">
+              <img src="images/main/book3.jpg" class="bd-placeholder-img" width="100%" height="425" alt="">
+              
+
+              <div class="card-body">
+                <p class="card-text"><button class="btn btn-secondary btn-sm mybtn1">铝合金复合板建筑幕墙及装饰构造</button></p>
+                <p class="intro">本图集是在04G325图集的基础上，为便于设计、施工人员的使用，按现行国家标准规范和技术进行了……</p>
+                <div class="info">
+                  <span class="s1">￥82.50</span> <span class="s2">• 345人购买</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm card3">
+              <img src="images/main/book2.jpg" class="bd-placeholder-img" width=" 100%" height="425" alt="">
+              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+
+              <div class="card-body">
+                <p class="card-text"><button class="btn btn-secondary btn-sm mybtn1">深海浅说</button></p>
+                <p class="intro">本书以及简单的形式描绘了深海的奥秘，带你遨游世界大洋，探索未知世界。</p>
+                <div class="info">
+                  <span class="s1">￥82.50</span> <span class="s2">• 345人购买</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card shadow-sm card4">
+              <img src="images/main/book3.jpg" class="bd-placeholder-img" width=" 100%" height="425" alt="">
+              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+
+              <div class="card-body">
+                <p class="card-text"><button class="btn btn-secondary btn-sm mybtn1">铝合金复合板建筑幕墙及装饰构造</button></p>
+                <p class="intro">本图集是在04G325图集的基础上，为便于设计、施工人员的使用，按现行国家标准规范和技术进行了……</p>
+                <div class="info">
+                  <span class="s1">￥82.50</span> <span class="s2">• 345人购买</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm card5">
+              <img src="images/main/book2.jpg" class="bd-placeholder-img" width=" 100%" height="425" alt="">
+              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+
+              <div class="card-body">
+                <p class="card-text"><button class="btn btn-secondary btn-sm mybtn1">深海浅说</button></p>
+                <p class="intro">本书以及简单的形式描绘了深海的奥秘，带你遨游世界大洋，探索未知世界。</p>
+                <div class="info">
+                  <span class="s1">￥82.50</span> <span class="s2">• 345人购买</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm card6">
+              <img src="images/main/book1.jpg" class="bd-placeholder-img" width=" 100%" height="425" alt="">
+              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+
+              <div class="card-body">
+                <p class="card-text"><button class="btn btn-secondary btn-sm mybtn1">吊车轨道联结及车档</button></p>
+                <p class="intro">本图集是在04G325图集的基础上，为便于设计、施工人员的使用，按现行国家标准规范和技术进行了……</p>
+                <div class="info">
+                  <span class="s1">￥82.50</span> <span class="s2">• 345人购买</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm card7">
+              <img src="images/main/book2.jpg" class="bd-placeholder-img" width=" 100%" height="425" alt="">
+              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+
+              <div class="card-body">
+                <p class="card-text"><button class="btn btn-secondary btn-sm mybtn1">深海浅说</button></p>
+                <p class="intro">本书以及简单的形式描绘了深海的奥秘，带你遨游世界大洋，探索未知世界。</p>
+                <div class="info">
+                  <span class="s1">￥82.50</span> <span class="s2">• 345人购买</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm card8">
+              <img src="images/main/book1.jpg" class="bd-placeholder-img" width=" 100%" height="425" alt="">
+              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+
+              <div class="card-body">
+                <p class="card-text"><button class="btn btn-secondary btn-sm mybtn1">吊车轨道联结及车档</button></p>
+                <p class="intro">本图集是在04G325图集的基础上，为便于设计、施工人员的使用，按现行国家标准规范和技术进行了……</p>
+                <div class="info">
+                  <span class="s1">￥82.50</span> <span class="s2">• 345人购买</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm card9">
+              <img src="images/main/book3.jpg" class="bd-placeholder-img" width=" 100%" height="425" alt="">
+              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+
+              <div class="card-body">
+                <p class="card-text"><button class="btn btn-secondary btn-sm mybtn1">铝合金复合板建筑幕墙及装饰构造</button></p>
+                <p class="intro">本图集是在04G325图集的基础上，为便于设计、施工人员的使用，按现行国家标准规范和技术进行了……</p>
+                <div class="info">
+                  <span class="s1">￥82.50</span> <span class="s2">• 345人购买</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-md-2 col-xs-4">
+            <h5>购物指南</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">会员与积分</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">免责条款</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">联系我们</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-2 col-xs-4">
+            <h5>支付与配送</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">在线支付</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">礼券支付</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">快递配送</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-2 col-xs-4">
+            <h5>售后服务</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">发票制度</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">退换货说明</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">帮助</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-4 offset-1 col-xs-6">
+            <form>
+              <h5>提交e-mail</h5>
+              <p>输入你想看到的书籍</p>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Sub</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="../javascripts/mainpage.js"></script>
+</body>
+
+</html>

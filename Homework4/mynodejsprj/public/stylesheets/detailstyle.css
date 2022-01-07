@@ -1,0 +1,160 @@
+.curLocation {
+    width: 100%;
+    background-color: #f8f8f8;
+}
+
+.curPosition {
+    padding: 15px 30px;
+    color: #999;
+}
+
+.curPosition a{
+    color: #999;
+}
+
+
+/* .sailMsg{
+    height: 320px;
+
+} */
+
+
+
+.sailMsg a .bookImg{
+    width: 300px;
+    height: 300px;
+}
+
+.e-bookInfo{
+    width: 600px;
+    margin:30px;
+}
+.bookIntro{
+    width: 620px;
+    height: 100px;
+    border: 2px solid #9e9e9e;
+}
+
+.bookIntro span{
+    display: block;
+}
+.bookIntro .col1{
+    height: 20px;
+    margin: 10px 0;
+}
+
+
+
+.bookIntro .col2{
+    height: 20px;
+    margin: 10px 0;
+}
+
+
+
+.col3 {
+    margin-left: 0px;
+    margin-right: 60px;
+}
+
+
+.priceInfo{
+    height: 25px;
+    margin: 25px 0;
+}
+
+
+.goodsNum{
+    width: 500px;
+    height: 30px;
+}
+
+.goodCount{
+    width: 32px;
+    height: 14px;
+    line-height: 14px;
+}
+
+/* .btn-group .buts .but1{
+    background: #e94e40;
+    color: #fff;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    width: 100px;
+    border-color: #e54f40;
+}
+
+.btn-group .buts .but1:hover{
+    background-color: #fff;
+    color: #e54f40;
+}
+
+.btn-group .buts .but2{
+    background-color: #fff;
+    border: none;
+}
+
+.btn-group .buts .but2:hover{
+    color:#e54f40
+} */
+
+/* .btn-group .buts .but3{
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    
+    margin-right: 20px;
+    border: none;
+} */
+.btn-group .buts .but3:hover{
+    color: #e54f40;
+}
+.share_btn{
+    background: url(../images/shareIcon.png) no-repeat left center;
+}
+
+.follow_btn{
+    background: url(../images/ico-06.png) no-repeat left center;
+}
+
+.choice{
+    margin-top: 20px;
+    width: 120px;
+    height: 50px;
+}
+
+.choice button{
+    background-color: #fff;
+    color: #0d6efd;
+    border-bottom: none;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    border-top: 2px solid #0d6efd;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+.briefIntro{
+    /* width: 1000px; */
+    border: 2px solid #e0e0e0;
+}
+
+
+.texts{
+    margin:20px 10px;
+    text-indent: 2em;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+.footer1{
+    border-top: 2px solid #0d6efd;
+}
